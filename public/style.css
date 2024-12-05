@@ -1,0 +1,207 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Light grey background for a clean look */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Adjusted for header */
+    font-size: 16px;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #4CAF50; /* Green for a professional and vibrant feel */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Main Container */
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading Styles */
+  h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    color: #4CAF50; /* Green to match header */
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  /* Form Styling */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"], textarea, select, input[type="datetime-local"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus, textarea:focus, select:focus {
+    border-color: #4CAF50; /* Green focus border */
+    outline: none;
+  }
+  
+  /* Buttons Styling */
+  button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Task List Styles */
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list li strong {
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .task-list button {
+    background-color: #f44336; /* Red for delete button */
+    width: auto;
+    padding: 8px 15px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .task-list button:hover {
+    background-color: #e53935;
+  }
+  
+  .task-list button:focus {
+    outline: none;
+  }
+  
+  /* Edit Form */
+  #edit-form {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #edit-form input[type="text"], #edit-form textarea, #edit-form select {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+  }
+  
+  #edit-form select, #edit-form input[type="datetime-local"] {
+    width: 48%;
+    margin-right: 0;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    input[type="text"], textarea, select, input[type="datetime-local"], button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    #edit-form input[type="text"], #edit-form textarea, #edit-form select {
+      width: 100%;
+      display: block;
+      margin-bottom: 15px;
+    }
+  
+    .task-list button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  
